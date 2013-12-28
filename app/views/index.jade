@@ -1,0 +1,28 @@
+doctype 5
+html(lang="es")
+    head
+        meta(charset="utf-8")
+        title Concurso Escuela Mozart
+        script(src="js/prefixfree.min.js")
+        //script(src="socket.io/socket.io.js")
+        link(rel="stylesheet", href="css/normalize.css")        
+        link(rel="stylesheet", href="css/styles.css")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    body
+        header            
+            p Denuncialo :D
+        section 
+            h1 Aqui van muchas cosas
+            if(!user)
+                span Debes hacer login con 
+                a#facebook(href="/auth/facebook") Facebook                
+                a#facebook(href="/auth/twitter") Twitter                                
+            else  
+                Eres: #{user.displayName} 
+                a#logout(href="/logout") (Cerrar Sesión)
+        footer
+            p Todos los derechos reservados.
+        script(src="js/jquery.min.js")
+        script(src="js/handlebars.js")
+        script(src="js/main.js")
