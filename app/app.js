@@ -1,5 +1,5 @@
 var path    = require('path');
-var auth    = require('./auth');
+var auth    = require('./config/auth');
 var express = require('express');
 var passport = require('passport');
 

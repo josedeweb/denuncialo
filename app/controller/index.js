@@ -8,4 +8,5 @@ module.exports = function (req, res){
         title: "Concurso - Escuela Mozart",
         user: req.user,
     });
+    console.log(req.user);
 }
