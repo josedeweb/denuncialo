@@ -15,8 +15,6 @@ app.configure(function(){
     app.set('facebookSecret', process.env.facebookSecret);
     app.set('twitterKey', process.env.twitterKey);
     app.set('twitterSecret', process.env.twitterSecret);
-    //app.set('googleId', process.env.googleId);
-    //app.set('googleSecret', process.env.googleSecret);
     app.use(express.favicon());
     app.use(express.logger('dev'));
     app.use(express.json());

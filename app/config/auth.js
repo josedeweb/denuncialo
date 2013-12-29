@@ -2,6 +2,19 @@
 var FacebookStrategy = require('passport-facebook').Strategy;
 var TwitterStrategy = require('passport-twitter').Strategy;
 var GoogleStrategy = require('passport-google').Strategy;
+var UserModel = require('./models').UserModel;
+
+function findOrCreate ( profile, cb ) {
+    UserModel.findOrCreate({ username: profile.username }, profile, cb);
+}
+
+function parserProfile( profile ) {
+    return {
+        id 		   : profile.id,
+        username   : profile.username,
+        displayName: profile.displayName
+    };
+}
 
 exports.socialAuth = function ( app, passport ){
 	passport.use( new FacebookStrategy({
@@ -9,7 +22,8 @@ exports.socialAuth = function ( app, passport ){
 	    clientSecret: app.get('facebookSecret'),
 	    callbackURL: "/auth/facebook/callback"
 	}, function( accessToken, refreshToken, profile, done ) {		
-	    return done(null, profile);
+	    profile = parserProfile( profile );
+        findOrCreate(profile, done);
 	}));
 
 	passport.use( new TwitterStrategy({
@@ -17,17 +31,9 @@ exports.socialAuth = function ( app, passport ){
 	    consumerSecret: app.get('twitterSecret'),
 	    callbackURL: "/auth/twitter/callback"
 	}, function( token, tokenSecret, profile, done ) {		
-	    return done(null, profile);
-	}));
-
-	/*passport.use( new GoogleStrategy({
-	    clientID: app.get('googleId'),
-	    clientSecret: app.get('googleSecret'),
-	    callbackURL: "/auth/google/callback"
-	}, function( identifier, profile, done ) {
-		console(profile);
-	    return done(null, profile);
-	}));*/
+	    profile = parserProfile( profile );
+        findOrCreate(profile, done);
+	}));	
 
 	passport.serializeUser( function(user, done){
 	    done(null, user);
