@@ -11,7 +11,7 @@ function findOrCreate ( profile, cb ) {
 function parserProfile( profile ) {
     return {
         userId 		   : profile.id,
-        userName   : profile.userName,
+        userName   : profile.username,
         displayName	: profile.displayName
     };
 }
