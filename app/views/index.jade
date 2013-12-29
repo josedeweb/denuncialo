@@ -13,14 +13,25 @@ html(lang="es")
         #main
             header 
                 img(src="images/header_web_med.png")            
+            nav#menu 
+                ul
+                    li.rigth Denuncielo
+                    li.rigth Asegurese
+                    li.rigth Buen taxista
+                    li Tenga en cuenta
             section
-                nav#menu 
-                    ul
-                        li.rigth Denuncielo
-                        li.rigth Asegurese
-                        li.rigth Buen taxista
-                        li Tenga en cuenta
-                h1 Aqui van muchas cosas
+                form#complaint
+                    #row
+                        #col6
+                            label Numero Placa
+                            input
+                        #col6
+                            label Abuso
+                            input
+                    #row
+                        #col6
+                            button Denuncia
+                        #col6
                 if(!user)
                     span Debes hacer login con 
                     a#facebook(href="/auth/facebook") Facebook                
