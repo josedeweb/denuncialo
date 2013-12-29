@@ -5,14 +5,14 @@ var GoogleStrategy = require('passport-google').Strategy;
 var UserModel = require('../models').UserModel;
 
 function findOrCreate ( profile, cb ) {
-    UserModel.findOrCreate({ username: profile.username }, profile, cb);
+    UserModel.findOrCreate({ userId: profile.id }, profile, cb);
 }
 
 function parserProfile( profile ) {
     return {
-        id 		   : profile.id,
-        username   : profile.username,
-        displayName: profile.displayName
+        userId 		   : profile.id,
+        userName   : profile.userName,
+        displayName	: profile.displayName
     };
 }
 
