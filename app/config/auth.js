@@ -22,6 +22,7 @@ exports.socialAuth = function ( app, passport ){
 	    clientSecret: app.get('facebookSecret'),
 	    callbackURL: "/auth/facebook/callback"
 	}, function( accessToken, refreshToken, profile, done ) {		
+	    console.log(profile);
 	    profile = parserProfile( profile );
         findOrCreate(profile, done);
 	}));
@@ -30,7 +31,8 @@ exports.socialAuth = function ( app, passport ){
 	    consumerKey: app.get('twitterKey'),
 	    consumerSecret: app.get('twitterSecret'),
 	    callbackURL: "/auth/twitter/callback"
-	}, function( token, tokenSecret, profile, done ) {		
+	}, function( token, tokenSecret, profile, done ) {	
+		console.log(profile);	
 	    profile = parserProfile( profile );
         findOrCreate(profile, done);
 	}));	
