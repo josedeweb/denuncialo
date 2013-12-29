@@ -2,7 +2,7 @@ doctype 5
 html(lang="es")
     head
         meta(charset="utf-8")
-        title Denuncialo
+        title Denuncia Lo.Co
         script(src="js/prefixfree.min.js")
         //script(src="socket.io/socket.io.js")
         link(rel="stylesheet", href="css/normalize.css")        
@@ -10,19 +10,26 @@ html(lang="es")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
 
     body
-        header            
-            p Denuncialo :D
-        section 
-            h1 Aqui van muchas cosas
-            if(!user)
-                span Debes hacer login con 
-                a#facebook(href="/auth/facebook") Facebook                
-                a#facebook(href="/auth/twitter") Twitter                                
-            else  
-                Eres: #{user.displayName} 
-                a#logout(href="/logout") (Cerrar Sesión)
-        footer
-            p Todos los derechos reservados.
+        #main
+            header 
+                img(src="images/header_web_med.png")            
+            section
+                nav#menu 
+                    ul
+                        li.rigth Denuncielo
+                        li.rigth Asegurese
+                        li.rigth Buen taxista
+                        li Tenga en cuenta
+                h1 Aqui van muchas cosas
+                if(!user)
+                    span Debes hacer login con 
+                    a#facebook(href="/auth/facebook") Facebook                
+                    a#facebook(href="/auth/twitter") Twitter                                
+                else  
+                    Eres: #{user.displayName} 
+                    a#logout(href="/logout") (Cerrar Sesión)
+            footer
+                
         script(src="js/jquery.min.js")
         script(src="js/handlebars.js")
         script(src="js/main.js")
