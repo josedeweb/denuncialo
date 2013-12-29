@@ -11,13 +11,14 @@ html(lang="es")
 
     body
         #main
-            header            
+            header 
+                img(src="images/header_web_med.png")            
             section
                 nav#menu 
                     ul
-                        li Denuncielo
-                        li Asegurese
-                        li Buen taxista
+                        li.rigth Denuncielo
+                        li.rigth Asegurese
+                        li.rigth Buen taxista
                         li Tenga en cuenta
                 h1 Aqui van muchas cosas
                 if(!user)
@@ -28,7 +29,7 @@ html(lang="es")
                     Eres: #{user.displayName} 
                     a#logout(href="/logout") (Cerrar Sesión)
             footer
-                p Todos los derechos reservados.
+                
         script(src="js/jquery.min.js")
         script(src="js/handlebars.js")
         script(src="js/main.js")
