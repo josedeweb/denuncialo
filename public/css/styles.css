@@ -13,6 +13,13 @@
         url('fonts/Kingthings.ttf') format('truetype'),
         url('fonts/Kingthings.svg#Kingthingsregular') format('svg');
 
+    font-family: 'Bubblegumsansregular';
+    src: url('fonts/bubblegumsansregular.eot');
+    src: url('fonts/bubblegumsansregular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/bubblegumsansregular.woff') format('woff'),
+        url('fonts/bubblegumsansregular.ttf') format('truetype'),
+        url('fonts/bubblegumsansregular.svg#bubblegumsansregular') format('svg');
+
     font-weight: normal;
     font-style: normal;
 }
