@@ -15,4 +15,6 @@ module.exports = function( app, io  ){
     app.get('/auth/twitter/callback', passport.authenticate('twitter', { successRedirect: '/', failureRedirect: '/login' }));
     app.get('/auth/google', passport.authenticate('google'));
     app.get('/auth/google/callback', passport.authenticate('google', { successRedirect: '/', failureRedirect: '/login' }));
+
+    app.get('/logout', logoutController);
 };
