@@ -17,10 +17,72 @@
     font-style: normal;
 }
 
-body{
-    background-color: #fff;
-    color: #eee;
-    font-family: "JINKY";
+html, body{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'arial';
     font-size: 16px;
     text-align: center;
+    background:#FFFDE5;
 }
+
+
+#logo{
+    font-family: 'JINKY';
+}
+
+nav#menu{
+    width: 80%;
+    margin: 0 10% 0 10%;
+}
+
+nav#menu ul{
+    width: 100%;
+}
+nav#menu li{
+    width:25%;
+    background: yellow;
+    font-size: 16px;
+    color: blue;
+    list-style-type: none;
+    display: inline-block;
+}
+
+#main { width: 100%; }
+
+header {
+    margin-top: 15px;
+    width: 100%;
+    height: 150px;
+    background-image: url('../images/header_web.png');
+    background-size: 100%;
+    background-repeat: no-repeat;   
+    -moz-background-size: 100%;  
+    -o-background-size: 100%;   
+    -webkit-background-size: 100%;    
+    -khtml-background-size: 100%; 
+}
+
+/* Laptop/Tablet (1024px) */
+@media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation: landscape) {
+    
+}
+
+/* Tablet Portrait (768px) */
+@media only screen and (min-width: 321px) and (max-width: 1024px) and (orientation: portrait) {
+   
+}
+
+/* Phone Landscape (480px) */
+@media only screen and (min-width: 321px) and (max-width: 480px) and (orientation: landscape) {
+    
+}
+
+/* Phone Portrait (320px) */
+@media only screen and (max-width: 320px) {
+   
+}
+
+
+
