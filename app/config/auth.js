@@ -2,7 +2,7 @@
 var FacebookStrategy = require('passport-facebook').Strategy;
 var TwitterStrategy = require('passport-twitter').Strategy;
 var GoogleStrategy = require('passport-google').Strategy;
-var UserModel = require('./models').UserModel;
+var UserModel = require('../models').UserModel;
 
 function findOrCreate ( profile, cb ) {
     UserModel.findOrCreate({ username: profile.username }, profile, cb);
