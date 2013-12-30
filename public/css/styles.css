@@ -5,24 +5,24 @@
         url('fonts/JINKY.woff') format('woff'),
         url('fonts/JINKY.ttf') format('truetype'),
         url('fonts/JINKY.svg#JINKYregular') format('svg');
-
+}
+@font-face {
     font-family: 'Kingthings';
     src: url('fonts/Kingthings.eot');
     src: url('fonts/Kingthings.eot?#iefix') format('embedded-opentype'),
         url('fonts/Kingthings.woff') format('woff'),
         url('fonts/Kingthings.ttf') format('truetype'),
         url('fonts/Kingthings.svg#Kingthingsregular') format('svg');
-
+}
+@font-face {
     font-family: 'Bubblegumsansregular';
     src: url('fonts/bubblegumsansregular.eot');
     src: url('fonts/bubblegumsansregular.eot?#iefix') format('embedded-opentype'),
         url('fonts/bubblegumsansregular.woff') format('woff'),
         url('fonts/bubblegumsansregular.ttf') format('truetype'),
         url('fonts/bubblegumsansregular.svg#bubblegumsansregular') format('svg');
-
-    font-weight: normal;
-    font-style: normal;
 }
+
 
 #main { width: 100%; }
 
@@ -68,6 +68,7 @@ nav#menu li{
     display: inline-block;
     padding: 8px 0 8px 0;
     font-weight: bold;
+
 }
 
 nav#menu li.rigth{
@@ -81,25 +82,61 @@ nav#menu li.rigth{
 }
 
 form#complaint{
-    width: 90%;
+    width: 100%;
 }
 
 form#complaint label{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #0083B2;
     display: block;
     text-align: left;
 }
 
+form#complaint input, form#complaint select{
+    display: block;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 5px;    
+}
+
+form#complaint input#detalle{
+    width: 60%;
+    height: 60px;
+}
+
+form#complaint input, form#complaint select{
+    border: solid 1px #DCDCDC;
+    width: 60%;    
+}
+
+form#complaint select{
+    overflow: hidden;
+    -webkit-appearance: none;
+    appearance: none;
+    background: url(../images/down_arrow_select.jpg) no-repeat right white;
+}
+
+form#complaint input#complaint{
+    width: auto;
+    background-color: #FF9F3F;
+    color:white;
+    -webkit-border-radius: 0 0 0 0;
+    border-radius: 0 0 0 0;
+    border: solid #FF8400;
+    font-size: 1.4rem;
+    font-family: Bubblegumsansregular;
+}
+
 #row{
     width: 100%;
     display: block;
+    margin-top: 20px;
 }
 
 #col6{
-    
     width: 50%;
     display: inline-block;
+    vertical-align: top;
 }
 
 footer{

@@ -23,22 +23,22 @@ html(lang="es")
                 form#complaint
                     #row
                         #col6
-                            label Numero Placa
-                            input
+                            label(for="placa") Placa: 
+                            input(type="text", name="placa", placeholder='HAM21R')
                         #col6
-                            label Abuso
-                            input
+                            label(for="abuso") Abuso:
+                            select(name="abuso")
+                                option(value="robo") Robo
+                                option(value="insultos") Insultos
                     #row
                         #col6
-                            button Denuncia
+                            label(for="detalle") Detalle: 
+                            input(type="text", name="detalle", placeholder='Me robó el taxista :(', id="detalle")  
                         #col6
-                if(!user)
-                    span Debes hacer login con 
-                    a#facebook(href="/auth/facebook") Facebook                
-                    a#facebook(href="/auth/twitter") Twitter                                
-                else  
-                    Eres: #{user.displayName} 
-                    a#logout(href="/logout") (Cerrar Sesión)
+                    #row
+                        #col6
+                            input(type="submit", value="Denuncia", id="complaint")
+                        #col6
             footer
                 
         script(src="js/jquery.min.js")
