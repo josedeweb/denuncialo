@@ -96,7 +96,9 @@ form#complaint input, form#complaint select{
     display: block;
     text-align: left;
     margin-left: 10%;
-    margin-top: 5px;    
+    margin-top: 5px;   
+    border: solid 1px #DCDCDC;
+    width: 60%;  
 }
 
 form#complaint input#detalle{
@@ -104,10 +106,6 @@ form#complaint input#detalle{
     height: 60px;
 }
 
-form#complaint input, form#complaint select{
-    border: solid 1px #DCDCDC;
-    width: 60%;    
-}
 
 form#complaint select{
     overflow: hidden;
@@ -150,16 +148,22 @@ footer{
 }
 /* Laptop/Tablet (1024px) */
 @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation: landscape) {
-    
+   
     nav#menu{
-    width: 80%;
-    margin: 0 10% 0 10%;
+        width: 80%;
+        margin: 0 10% 0 10%;
    }
 
     nav#menu li{
-        width:22%;
-        font-size: 1rem;
-    }            
+            width:22%;
+            font-size: 1rem;
+    }    
+
+    form#complaint input, form#complaint select{
+        margin-left: 5%;
+        width: 80%;  
+    }
+
 }
 
 /* Tablet Portrait (768px) */
@@ -168,6 +172,22 @@ footer{
         width:22%;
         font-size: 1rem;
     }        
+    
+    form#complaint input, form#complaint select{
+        margin-left: 5%;
+        width: 95%;  
+    }
+
+    form#complaint input#detalle{
+    width: 95%;
+    height: 60px;
+    }
+
+    #col6{
+        width: 100%;
+        display: block;
+        margin-top: 15px;
+    }
 }
 
 /* Phone Landscape (480px) */
