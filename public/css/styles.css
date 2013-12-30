@@ -1,26 +1,26 @@
 @font-face {
     font-family: 'JINKY';
-    src: url('fonts/JINKY.eot');
-    src: url('fonts/JNKY.eot?#iefix') format('embedded-opentype'),
-        url('fonts/JINKY.woff') format('woff'),
-        url('fonts/JINKY.ttf') format('truetype'),
-        url('fonts/JINKY.svg#JINKYregular') format('svg');
+    src: url('fonts/Jinky/JINKY.eot');
+    src: url('fonts/Jinky/JNKY.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Jinky/JINKY.woff') format('woff'),
+        url('fonts/Jinky/JINKY.ttf') format('truetype'),
+        url('fonts/Jinky/JINKY.svg#JINKYregular') format('svg');
 }
 @font-face {
     font-family: 'Kingthings';
-    src: url('fonts/Kingthings.eot');
-    src: url('fonts/Kingthings.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Kingthings.woff') format('woff'),
-        url('fonts/Kingthings.ttf') format('truetype'),
-        url('fonts/Kingthings.svg#Kingthingsregular') format('svg');
+    src: url('fonts/Kingthings/Kingthings.eot');
+    src: url('fonts/Kingthings/Kingthings.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Kingthings/Kingthings.woff') format('woff'),
+        url('fonts/Kingthings/Kingthings.ttf') format('truetype'),
+        url('fonts/Kingthings/Kingthings.svg#Kingthingsregular') format('svg');
 }
 @font-face {
     font-family: 'Bubblegumsansregular';
-    src: url('fonts/bubblegumsansregular.eot');
-    src: url('fonts/bubblegumsansregular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/bubblegumsansregular.woff') format('woff'),
-        url('fonts/bubblegumsansregular.ttf') format('truetype'),
-        url('fonts/bubblegumsansregular.svg#bubblegumsansregular') format('svg');
+    src: url('fonts/bubble/bubblegumsansregular.eot');
+    src: url('fonts/bubble/bubblegumsansregular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/bubble/bubblegumsansregular.woff') format('woff'),
+        url('fonts/bubble/bubblegumsansregular.ttf') format('truetype'),
+        url('fonts/bubble/bubblegumsansregular.svg#bubblegumsansregular') format('svg');
 }
 
 
