@@ -15,15 +15,19 @@ html(lang="es")
                 img(src="images/header_web_med.png")            
             nav#menu 
                 ul
-                    li.rigth Denuncielo
-                    li.rigth Asegurese
-                    li.rigth Buen taxista
-                    li Tenga en cuenta
+                    li.rigth 
+                        a(href="/") Denuncielo
+                    li.rigth 
+                        a(href="sure") Asegurese
+                    li.rigth.web 
+                        a(href="good") Buen taxista
+                    li.web 
+                        a(href="tenga") Tenga en cuenta
             section
                 form#complaint
                     #row
                         #col6
-                            label(for="placa") Placa: 
+                            label(for="placa") Número Placa: 
                             input(type="text", name="placa", placeholder='HAM21R')
                         #col6
                             label(for="abuso") Abuso:

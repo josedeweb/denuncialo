@@ -5,6 +5,8 @@
         url('fonts/Jinky/JINKY.woff') format('woff'),
         url('fonts/Jinky/JINKY.ttf') format('truetype'),
         url('fonts/Jinky/JINKY.svg#JINKYregular') format('svg');
+    font-style: none;
+    font-weight: none;
 }
 @font-face {
     font-family: 'Kingthings';
@@ -21,6 +23,7 @@
         url('fonts/bubble/bubblegumsansregular.woff') format('woff'),
         url('fonts/bubble/bubblegumsansregular.ttf') format('truetype'),
         url('fonts/bubble/bubblegumsansregular.svg#bubblegumsansregular') format('svg');
+
 }
 
 
@@ -62,18 +65,23 @@ nav#menu ul{
 
 nav#menu li{
     width:24%;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #0083B2;
     list-style-type: none;
     display: inline-block;
     padding: 8px 0 8px 0;
-    font-weight: bold;
+    font-family: Bubblegumsansregular;
+}
 
+nav#menu li a{
+    text-decoration: none;
 }
 
 nav#menu li.rigth{
     border-right:1px solid #0083B2;
 }
+
+
 
 #main section{
     width: 60%;
@@ -83,10 +91,12 @@ nav#menu li.rigth{
 
 form#complaint{
     width: 100%;
+    font-family: Bubblegumsansregular;
+
 }
 
 form#complaint label{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: #0083B2;
     display: block;
     text-align: left;
@@ -121,7 +131,7 @@ form#complaint input#complaint{
     -webkit-border-radius: 0 0 0 0;
     border-radius: 0 0 0 0;
     border: solid #FF8400;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-family: Bubblegumsansregular;
 }
 
@@ -156,7 +166,7 @@ footer{
 
     nav#menu li{
             width:22%;
-            font-size: 1rem;
+            font-size: 1.2rem;
     }    
 
     form#complaint input, form#complaint select{
@@ -188,6 +198,22 @@ footer{
         display: block;
         margin-top: 15px;
     }
+
+    nav#menu li.web{
+        display:none;
+    }
+
+    nav#menu li.web{
+        display:none;
+    }
+
+    nav#menu li{
+        width:44%;
+        font-size: 1.4rem;
+        border: none;
+        border: none !important;
+    }
+
 }
 
 /* Phone Landscape (480px) */
